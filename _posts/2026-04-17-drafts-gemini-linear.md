@@ -1,38 +1,80 @@
 ---
 title: "Drafts × Gemini × Linear 連携プロジェクト 開発レポート"
-date: 2026-04-17 15:10:00 +0900
+date: 2026-04-17
 categories: [タスク管理]
 tags: [Drafts, Gemini, Linear]
-description: "めっちゃ大変だった・・・"
 ---
 
 # Drafts × Gemini × Linear 連携プロジェクト 開発レポート
 
-## 1. プロジェクト概要
+めっちゃ大変だった……でも、学びの密度は最高だった。
 
-iPhone/Macのメモアプリ「Drafts」から送信された雑多なメモを、Google Gemini AIで解析して「RPG風タスク」に構造化し、タスク管理ツール「Linear」へ自動登録するシステムの構築。
+## 0. この記事について
 
-## 2. 開発の軌跡（時系列）
+この記事は、自分自身の備忘録として書いています。内容はかなり技術的で、自分でも理解しきれていない部分があります。それでも「あのとき何をやったか」を残しておくことに意味があると思い、記録しました。同じようなことに取り組む方の参考になれば嬉しいですが、まずは未来の自分へのメモです。
 
-- **環境構築:** VSCodeでの開発環境セットアップ。Linear APIキーおよびGoogle Workspace（Google Cloud）のAPIキー取得。
-- **インフラ構築:** ngrok の導入により、ローカルのMacを外部（Drafts）からアクセス可能な状態に公開。express（Node.js）によるWebhook受付サーバーの構築。
-- **Gemini API 404エラーとの格闘:** 当初 `gemini-1.5-flash` 等の一般的名称でエラーが発生。SDKのデフォルトURL（`v1beta`）とWorkspaceキーの仕様不一致が判明。
-- **モデルの特定（ターニングポイント）:** 診断用スクリプトを実行し、現在のAPIキーで使用可能なモデル名 `gemini-3.1-flash-image-preview` を特定。
-- **最終実装:** SDKを介さず、axios を用いた直接的なREST APIコールに切り替えることで、URLとモデル名のミスマッチを解消。LinearのチームID自動取得機能を搭載。
-- **疎通確認成功:** Draftsからの送信 → Geminiの解析 → Linearへの登録という全工程の自動化を確認。
+## 1. なぜこれを作ったのか
 
-## 3. 現時点でのシステム構成
+「自分のライフスタイルに合ったタスク管理の仕組みをAIと一緒に考える」という取り組みの中で、今月の課題テーマ「**タスクのソースをどこから取得するか**」に向き合った結果として生まれたトライアルです。その思考プロセスについては別記事（近日公開）で詳しく書きます。
 
-```text
-[Drafts (Webhook)] -> [ngrok (Tunnel)] -> [Node.js (Local Server)] -> [Gemini API (AI)] -> [Linear API (Task)]
+## 2. プロジェクト概要
+
+iPhone/MacのメモアプリDraftsから投げた雑然としたメモを、Google Gemini AIが「RPG風タスク」に整形し、タスク管理ツールLinearへ自動登録するシステムです。
+
+```
+[Drafts (Webhook)] → [ngrok (トンネル)] → [Node.js (ローカルサーバー)] → [Gemini API (AI)] → [Linear API (タスク)]
 ```
 
-## 4. 設定ファイル定義 (.env)
+## 3. 開発の軌跡
 
-プロジェクトのルートディレクトリに配置。
+### 環境構築
 
-```text
-LINEAR_API_KEY=lin_api_xxxxxxxxxxxxxxxx
-GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyxxxxxxxxxxxxxxxx
+VSCodeで開発環境を整え、Linear APIキーとGoogle Cloud（Google Workspace）のAPIキーを取得。ここは比較的スムーズでした。
+
+### ngrokによるローカル公開
+
+DraftsからのWebhookを受け取るため、ngrokでローカルのMacを外部へ公開。express（Node.js）でWebhookサーバーを構築しました。
+
+> ⚠️ **ngrokはあくまで開発・テスト用**
+> URLが漏洩すると誰でもアクセスできる状態になります。検証が終わったら必ずセッションを終了してください。本番運用ではCloud RunやRailwayなどへの移行を推奨します。
+
+### Gemini API 404エラーとの格闘（最大の難所）
+
+`gemini-1.5-flash` など一般的なモデル名でAPIを叩くと軒並み404エラー。原因は2層構造でした：
+
+- SDKのデフォルトエンドポイントが `v1beta` を参照していた
+- Google Workspace用APIキーは、使用できるモデル名が通常のGemini APIと異なっていた
+
+診断スクリプトを自作して実際に呼べるモデルを列挙したところ、`gemini-3.1-flash-image-preview` でアクセスできることが判明。SDKを経由せず `axios` で直接REST APIを叩く方式に切り替えることで解消しました。
+
+### LinearのチームID自動取得
+
+ハードコードを避けるため、Linear APIからチームIDを動的に取得する仕組みを実装。
+
+### 疎通確認成功 🎉
+
+Drafts送信 → Gemini解析 → Linearタスク登録、全工程の自動化を確認。
+
+## 4. .envファイルとAPIキーの管理——重要なセキュリティ注意
+
+`.env` ファイルには以下の3つを設定します：
+
+```
+LINEAR_API_KEY=（Linear管理画面で発行したAPIキー）
+GOOGLE_GENERATIVE_AI_API_KEY=（Google Cloudで発行したAPIキー）
 PORT=3000
 ```
+
+> ⚠️ **絶対にやってはいけないこと**
+>
+> - `.env` をGitHubなどの公開リポジトリにコミットしない
+> - APIキーをブログ・SNS・スクリーンショットに掲載しない（プレフィックスだけでもキーの形式が特定できてしまいます）
+> - 必ず `.gitignore` に `.env` を追加する
+>
+> キーが漏洩した場合は、即座に各サービスの管理画面でキーを**無効化・再発行**してください。
+
+## 5. 振り返って
+
+このプロジェクトで得た最大の学びは「**APIキーの発行元によって仕様が変わる**」という現実でした。同じGeminiでも、キーの種類（Google Cloud vs Workspace）で使えるモデル名もエンドポイントも異なる——これは公式ドキュメントだけではたどり着きにくい落とし穴です。
+
+めっちゃ大変だったけど、自分で作ったシステムが動いた瞬間の達成感はひとしお。冒険は続きます。
