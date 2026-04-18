@@ -1,39 +1,37 @@
 ---
-title: Google Workspace 個人利用についての情報共有まとめ
-date: 2026-04-15 16:58:00 +0900
+title: Google Workspace を個人利用する方法：Geminiを安く使うための選択肢
+date: 2026-04-15
 categories: [Google Workspace]
 tags: [Google Workspace, 個人利用]
-description: Geminiを格安で使う方法として
 ---
-
-# Google Workspace 個人利用についての情報共有まとめ
 
 ## 背景
 
-Geminiの精度向上、NotebookLMの利用ニーズ、Nano Bananaの精度向上などにより、Google AIサービスへの課金を検討していた
+Geminiの精度向上・NotebookLMの活用ニーズが高まり、Google AIサービスへの課金を検討していた。
 
-Gemini単体（個人アカウント）で課金するか迷っていたところ、Google Workspaceの方が安く利用できることが判明
-
-調査の結果、ムームードメイン経由でGoogle Workspaceを契約する方法を選択（1アカウントから利用可能）
+Gemini単体（個人アカウント）で月額課金するか迷っていたところ、**Google Workspaceで契約した方がトータルで安い**ことが判明。調査の結果、ムームードメイン経由でGoogle Workspaceを契約する方法を選んだ。
 
 ## 結果
 
-ムームードメインのサービスを通じてGoogle Workspaceを契約し、GeminiやNotebookLMなどのGoogle AIサービスを利用開始
+ムームードメイン経由でGoogle Workspaceを契約し、GeminiやNotebookLMを使い始めた。
 
 ## メリット
 
-コスト面: Gemini個人課金より Google Workspace 契約の方が安い
-
-セキュリティ面: Workspace環境ではAIの学習データとして利用されないため、個人情報の取り扱いが安心
-
-ドメイン取得の一石二鳥: 将来的に個人活動用の独自ドメイン取得を考えている人には、ドメイン＋Workspaceをまとめて管理できる
-
-少人数OK: 1アカウントから契約可能
+- **コスト**：Gemini単体の個人課金より安く済む
+- **プライバシー**：Workspace環境ではAIの学習データとして利用されないため、個人情報を入力しやすい
+- **一石二鳥**：独自ドメイン取得を考えているなら、ドメイン＋Workspaceをまとめて管理できる
+- **少人数OK**：1アカウントから契約可能
 
 ## デメリット
 
-独自ドメインが必要: Workspace利用にはドメイン取得・管理が前提となる
+- **独自ドメインが必須**：ドメイン取得・管理が前提になる
+- **管理の手間**：個人利用でもWorkspaceの管理者設定が必要
+- **ドメイン不要な人には過剰**：独自ドメインに興味がなければ、Gemini単体課金の方がシンプル
 
-管理の手間: 個人利用であってもWorkspaceの管理者設定が必要になる
+## 使い始めての実感
 
-ドメイン不要な人には過剰: 独自ドメインに興味がない場合、Gemini単体課金の方がシンプル
+正直なところ、もともとGoogleのエコシステムにどっぷり入ることに抵抗感があった。しかし実際に使い始めると、**その便利さが抵抗感を完全に上回った**。
+
+Workspace環境ではAIの学習に利用されないという安心感もあり、Geminiへの入力に対する心理的なハードルが自然と下がった。
+
+NotebookLMも現在フル活用中。こちらはまた別の記事で詳しく書く予定。
