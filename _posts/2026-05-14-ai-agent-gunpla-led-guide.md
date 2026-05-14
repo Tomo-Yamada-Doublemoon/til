@@ -62,8 +62,7 @@ Kosmosのエアリアル専用LEDキットの組み込み方を調べていた�
 生成されたのは**16章構成のドキュメント**でした。  
 目次だけ見ても、かなり本格的な構成です。
 
-[ドキュメントを見る](assets/img/ガンダムエアリアル フルメカニクス用LEDキット組み立て説明資料.pdf)
-
+[PDF](assets/img/gundam-aerial-full-mechanics-led-kit-guide.pdf)
 
 1. 完全作業書の方針
 2. 厳守事項（重大な警告）
