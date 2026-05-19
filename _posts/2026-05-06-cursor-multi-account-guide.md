@@ -6,6 +6,8 @@ tags: [ADS, Cursor, マルチアカウント, Mac, 学習記録, 環境構築]
 description: "ADS用と個人用でCursorを使い分けたい──その悩みをAIに相談したら、想定外の方法で解決できました。おまけにCursor自身が図解まで作ってくれました。"
 ---
 
+> **シリーズ:** [Cursor実践] 2/3 — 前: [利用量表示](../cursor-usage/) — 次: [shadcn 3つの学び](../shadcn-cursor-three-learnings/)
+
 ## きっかけ：ADS用と個人用のCursorを分けたかった
 
 ADSの課題でCursorを使い始めてから、ひとつ気になることが出てきました。
