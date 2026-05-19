@@ -41,27 +41,27 @@ AI活用・ツール設計・日々の気づきをゆるく残していくマイ
 
 | 順 | 記事 |
 |:---:|------|
-| 0 | [4月課題ふりかえり（まとめ）](/posts/ads-april-assignment-recap/) |
-| 1 | [習慣が先、ツールは後](/posts/habit-first-then-tool-ads/) |
-| 2 | [2トラック並行作戦](/posts/two-track-ads-april-review/) |
-| 3 | [AIニュース改造・前編](/posts/ai-news-tool-customization/) |
-| 4 | [AIニュース改造・後編（失敗ログ）](/posts/ai-news-tool-debug-log/) |
+| 0 | [4月課題ふりかえり（まとめ）]({{ site.baseurl }}/posts/ads-april-assignment-recap/) |
+| 1 | [習慣が先、ツールは後]({{ site.baseurl }}/posts/habit-first-then-tool-ads/) |
+| 2 | [2トラック並行作戦]({{ site.baseurl }}/posts/two-track-ads-april-review/) |
+| 3 | [AIニュース改造・前編]({{ site.baseurl }}/posts/ai-news-tool-customization/) |
+| 4 | [AIニュース改造・後編（失敗ログ）]({{ site.baseurl }}/posts/ai-news-tool-debug-log/) |
 
 ### Cursor実践
 
 | 順 | 記事 |
 |:---:|------|
-| 1 | [利用量をチャット画面に表示](/posts/cursor-usage/) |
-| 2 | [マルチアカウント運用（Mac）](/posts/cursor-multi-account-guide/) |
-| 3 | [shadcn/ui × Cursorで学んだ3つのこと](/posts/shadcn-cursor-three-learnings/) |
+| 1 | [利用量をチャット画面に表示]({{ site.baseurl }}/posts/cursor-usage/) |
+| 2 | [マルチアカウント運用（Mac）]({{ site.baseurl }}/posts/cursor-multi-account-guide/) |
+| 3 | [shadcn/ui × Cursorで学んだ3つのこと]({{ site.baseurl }}/posts/shadcn-cursor-three-learnings/) |
 
 ### ADSの型（再訪推奨）
 
 | 順 | 記事 |
 |:---:|------|
-| 1 | [課題攻略ルーティン](/posts/ads-task-routine-template/) |
-| 2 | [課題分解の本質（第4回講義）](/posts/essence-of-task-decomposition/) |
-| 3 | [AIセキュリティ入力ガイド](/posts/ai-security-input-guide/)（pin） |
+| 1 | [課題攻略ルーティン]({{ site.baseurl }}/posts/ads-task-routine-template/) |
+| 2 | [課題分解の本質（第4回講義）]({{ site.baseurl }}/posts/essence-of-task-decomposition/) |
+| 3 | [AIセキュリティ入力ガイド]({{ site.baseurl }}/posts/ai-security-input-guide/)（pin） |
 
 ---
 
@@ -71,10 +71,10 @@ AI活用・ツール設計・日々の気づきをゆるく残していくマイ
 
 | パターン名 | 一行定義 | 詳しい記事 |
 |------------|----------|------------|
-| **地図先出し** | 実装前にAIに全体プランだけ作らせ、自分は批評・修正モードで動く | [2トラック並行](/posts/two-track-ads-april-review/) |
-| **考えと手の分離** | Planで設計確認 → Agentで実行 | [shadcn 3つの学び](/posts/shadcn-cursor-three-learnings/) |
-| **カレンダー先読み** | 課題テキストより先に「既存予定」をAIに渡す | [課題攻略ルーティン](/posts/ads-task-routine-template/) |
-| **使ってから設計** | プロトタイプより習慣・対話で解像度を上げる | [習慣が先、ツールは後](/posts/habit-first-then-tool-ads/) |
+| **地図先出し** | 実装前にAIに全体プランだけ作らせ、自分は批評・修正モードで動く | [2トラック並行]({{ site.baseurl }}/posts/two-track-ads-april-review/) |
+| **考えと手の分離** | Planで設計確認 → Agentで実行 | [shadcn 3つの学び]({{ site.baseurl }}/posts/shadcn-cursor-three-learnings/) |
+| **カレンダー先読み** | 課題テキストより先に「既存予定」をAIに渡す | [課題攻略ルーティン]({{ site.baseurl }}/posts/ads-task-routine-template/) |
+| **使ってから設計** | プロトタイプより習慣・対話で解像度を上げる | [習慣が先、ツールは後]({{ site.baseurl }}/posts/habit-first-then-tool-ads/) |
 
 ---
 
