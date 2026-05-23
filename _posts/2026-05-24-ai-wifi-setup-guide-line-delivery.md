@@ -103,19 +103,19 @@ SAMSUNGのAndroidスマホとWindowsパソコン用でまとめてください�
 
 **＜スマホ（Galaxy）版＞**
 
-![Galaxy専用 Wi-Fi設定ガイド](/assets/img/posts/nuro-setting-galaxy.png)
+![Galaxy専用 Wi-Fi設定ガイド](/assets/img/nuro-setting-galaxy.png)
 
 **＜Windowsパソコン版＞**
 
-![NURO光のWi-FiをWindowsパソコンにつなぐ方法](/assets/img/posts/nuro-setting-windows.png)
+![NURO光のWi-FiをWindowsパソコンにつなぐ方法](/assets/img/nuro-setting-windows.png)
 
 **＜シンプル統合版＞**
 
-![Wi-Fi設定ガイド（シンプル版）](/assets/img/posts/nuro-setting-easy.png)
+![Wi-Fi設定ガイド（シンプル版）](/assets/img/nuro-setting-easy.png)
 
 **＜家庭向け総合版＞**
 
-![NURO光 家庭向けWi-Fi設定ガイド](/assets/img/posts/nuro-setting.png)
+![NURO光 家庭向けWi-Fi設定ガイド](/assets/img/nuro-setting.png)
 
 ### ⑥ LINE添付用のメッセージ文を生成
 
