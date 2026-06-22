@@ -1,6 +1,6 @@
 ---
 title: "画面とデータが決まった後に来た壁——MIERUのAI支援をローカルLLMにする理由"
-date: 2026-06-22 21:00:00 +0900
+date: 2026-06-22 16:50:00 +0900
 categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, マインドセット, ローカルLLM, MIERU, プライバシー設計]
 description: "MIERUのAI支援部分をクラウドAPIではなくローカルLLMで実装しようと判断した理由と、Cursor×Ollamaでの初期実装までの記録。"
