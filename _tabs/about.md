@@ -13,7 +13,8 @@ order: 4
 その前はIT業界で20年ほど、サポートとセールスエンジニアリングの仕事をしていました。  
 今もその頃の「仕組みを読む癖」は健在で、AIツールとの相性が思ったよりよかったりしています。
 
-ADS受講中は、非エンジニアながら **AIと協働して作る実験**（Cursor / GitHub）を進めています。
+ADS受講中は、非エンジニアながら **AIと協働して作る実験**（Cursor / GitHub）を進めています。  
+現在の実践課題は「MIERU」というプロダクトで、AI支援部分をあえてローカルLLM（Ollama）で作る実験に取り組んでいます。
 
 趣味は映画・ゲーム・音楽・ガンプラ制作・デジタルガジェットと、わりとオタク寄りです。  
 ガンプラはエアブラシ塗装とLED電飾に最近はまっています。
@@ -67,6 +68,7 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 | 3 | [shadcn/ui × Cursorで学んだ3つのこと]({{ site.baseurl }}/posts/shadcn-cursor-three-learnings/) |
 | 4 | [Git整理プランを先に聞く]({{ site.baseurl }}/posts/cursor-ask-first-git-setup/) |
 | 5 | [スマホ＋Cursor Web図解（失敗ログ）]({{ site.baseurl }}/posts/smartphone-cursor-diagram-faillog/) |
+| 6 | [CursorのProとTeam、クレジットの減り方が違う理由]({{ site.baseurl }}/posts/cursor-pro-team-credit-pool-difference/) |
 
 ### ADSの型（再訪推奨）
 
@@ -82,6 +84,24 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 |:---:|------|
 | 1 | [Life as Code 実験開始]({{ site.baseurl }}/posts/life-as-code-experiment/) |
 | 2 | [Life as Code vol.2]({{ site.baseurl }}/posts/life-as-code-vol2/) |
+
+### スキルを育てる
+
+| 順 | 記事 |
+|:---:|------|
+| 1 | [スキルはそのまま使わない。壁打ちして育てる]({{ site.baseurl }}/posts/skill-grow-through-dialogue/) |
+| 2 | [壁打ちプロンプトをスキルにする、3つの設計判断]({{ site.baseurl }}/posts/skill-design-three-decisions/) |
+
+### 学びの単発ログ
+
+| 記事 | 内容 |
+|------|------|
+| [Google Workspaceを個人利用する方法]({{ site.baseurl }}/posts/google-workspace-usage/) | Geminiを安く使うための契約ハック |
+| [Drafts×Gemini×Linear 連携開発レポート]({{ site.baseurl }}/posts/drafts-gemini-linear/) | 技術連携の試行錯誤メモ |
+| [課題を分解したら、問題はツールじゃなかった]({{ site.baseurl }}/posts/problem-was-not-a-tool/) | ADS第4回課題の分解ログ |
+| [スキルを「育てる」仕組みをGitHubで作った]({{ site.baseurl }}/posts/claude-skill-github-management/) | Claudeスキルのバージョン管理 |
+| [仕組みが分からなかったVercelを、Diaに聞いたら5分で整理できた]({{ site.baseurl }}/posts/vercel-understood-via-dia/) | ADS第5回課題の理解メモ |
+| [「全員にFableは必要か」を確かめるために作ったプロンプト]({{ site.baseurl }}/posts/does-everyone-need-fable/) | モデル選定を実験に変えた話 |
 
 ### 番外編
 
@@ -108,7 +128,7 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 
 ## よく使うツール
 
-`Claude.ai` / `Cursor` / `GenSpark` / `Gemini` / `Dia` / `NotebookLM`  
+`Claude.ai` / `Cursor` / `GenSpark` / `Gemini` / `Dia` / `NotebookLM` / `Ollama`  
 `Notion` / `Google Apps Script` / `Capacities` / `Linear` / `1Password` / `Vercel`
 
 ---
