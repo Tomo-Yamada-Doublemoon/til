@@ -4,7 +4,12 @@ date: 2026-07-11 17:12:00 +0900
 categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, Claude, マインドセット, 学習記録, 個人利用]
 description: "提供されたスキルをそのまま使わず、合わないところをAIに壁打ちして自分用に作り替える運用方法を、grill-meスキルの改変プロセスと実際のプロンプトを例に整理。"
+series: "スキルを育てる"
+series_order: 1
+series_total: 2
 ---
+
+> **シリーズ:** スキルを育てる [1/2] — 次: [壁打ちプロンプトをスキルにする、3つの設計判断](https://tomo-yamada-doublemoon.github.io/til/posts/skill-design-three-decisions/)
 
 ## この記事でわかること
 
