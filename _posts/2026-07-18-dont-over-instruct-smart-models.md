@@ -71,6 +71,7 @@ LifeOS全体の負荷は60〜90%削減できました。ざっくり2/3程度、
 
 ここまでの転換を1枚の図解にまとめました。
 
+{::nomarkdown}
 <a href="https://diagram-dont-over-instruct-smart-models.surge.sh" class="card-wrapper card p-3 text-decoration-none" target="_blank" rel="noopener">
   <div class="card-body p-0">
     <div class="text-muted small mb-1">図解で見る</div>
@@ -78,6 +79,7 @@ LifeOS全体の負荷は60〜90%削減できました。ざっくり2/3程度、
     <p class="card-text mb-0 small text-muted">LifeOSをv6からv7.xに作り直し、指示を減らすことで負荷を60〜90%削減した転換を図解しました。</p>
   </div>
 </a>
+{:/nomarkdown}
 
 ## 再現手順(3ステップ)
 
