@@ -116,7 +116,7 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 | 記事 | 内容 |
 |------|------|
 | [ガンプラLED作業書]({{ site.baseurl }}/posts/ai-agent-gunpla-led-guide/) | 趣味へのAI応用 |
-| [Wi-Fi設定図解をLINEで届ける]({{ site.baseurl }}/posts/ai-wifi-setup-guide-line-delivery/) | クライアント支援へのAI応用 |
+| [Wi-Fi設定図解をLINEで届ける]({{ site.baseurl }}/posts/ai-wifi-setup-guide-line-delivery/) | 家族へのITサポートへのAI応用 |
 
 ---
 
