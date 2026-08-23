@@ -11,7 +11,7 @@ image:
   alt: "人生をOSにする、という問いへ——Life as Code 実験ログvol.2"
 ---
 
-> **シリーズ:** Life as Code [2/連載中] — 前: [人生をGitHubで「デプロイ」する：Life as Codeの実験開始](https://tomo-yamada-doublemoon.github.io/til/posts/life-as-code-experiment/) / 次: 準備中
+> **シリーズ:** Life as Code [2/連載中] — 前: [人生をGitHubで「デプロイ」する：Life as Codeの実験開始](https://tomo-yamada-doublemoon.github.io/til/posts/life-as-code-experiment/) / 次: [賢いモデルには、細かく指示しないほうがいい](https://tomo-yamada-doublemoon.github.io/til/posts/dont-over-instruct-smart-models/)
 
 ## この記事でわかること
 

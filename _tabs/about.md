@@ -14,7 +14,7 @@ order: 4
 今もその頃の「仕組みを読む癖」は健在で、AIツールとの相性が思ったよりよかったりしています。
 
 ADS受講中は、非エンジニアながら **AIと協働して作る実験**（Cursor / GitHub）を進めています。  
-現在の実践課題は「MIERU」というプロダクトで、AI支援部分をあえてローカルLLM（Ollama）で作る実験に取り組んでいます。
+実践課題のひとつが「MIERU」で、AI支援部分をあえてローカルLLM（Ollama）で作る実験を書いています。あわせて、提供されたClaudeスキルを自分用に育てる記録も残しています。
 
 趣味は映画・ゲーム・音楽・ガンプラ制作・デジタルガジェットと、わりとオタク寄りです。  
 ガンプラはエアブラシ塗装とLED電飾に最近はまっています。
@@ -25,10 +25,11 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 
 「考えたことを流さない航海日誌」として、以下を書いています。
 
-1. **ADS講義・月次課題の攻略ログ**
+1. **ADS講義・月次課題の攻略ログ**（MIERUなどの実践課題を含む）
 2. **Cursor / AIツールの使い方メモと失敗ログ**
 3. **Life as Code**（GitHubで人生をOS化する実験）
-4. **番外編**（仕事・趣味へのAI応用）
+4. **スキルを育てる**（提供スキルを自分用に作り替える記録）
+5. **番外編**（仕事・趣味へのAI応用）
 
 「ちゃんとした記事」より「後で自分が読み返せるメモ」に近いかもしれません。  
 プログラミング経験はほぼゼロですが、仕組みを理解するのは得意なので、  
@@ -78,12 +79,19 @@ ADS受講中は、非エンジニアながら **AIと協働して作る実験**�
 | 2 | [課題分解の本質（第4回講義）]({{ site.baseurl }}/posts/essence-of-task-decomposition/) |
 | 3 | [AIセキュリティ入力ガイド]({{ site.baseurl }}/posts/ai-security-input-guide/)（pin） |
 
+### MIERU（実践課題）
+
+| 順 | 記事 |
+|:---:|------|
+| 1 | [MIERUのAI支援をローカルLLMにする理由]({{ site.baseurl }}/posts/mieru-local-llm-design-reason/) |
+
 ### Life as Code
 
 | 順 | 記事 |
 |:---:|------|
 | 1 | [Life as Code 実験開始]({{ site.baseurl }}/posts/life-as-code-experiment/) |
 | 2 | [Life as Code vol.2]({{ site.baseurl }}/posts/life-as-code-vol2/) |
+| 3 | [賢いモデルには、細かく指示しないほうがいい]({{ site.baseurl }}/posts/dont-over-instruct-smart-models/) |
 
 ### スキルを育てる
 

@@ -4,11 +4,14 @@ date: 2026-07-18 09:00:00 +0900
 categories: [アイデア設計, AI活用]
 tags: [ADS, マインドセット, アイデア, AI活用]
 description: "LifeOS 7.xで負荷を60〜90%減らせた理由は、指示を増やすことではなく減らすことだった。Context EngineeringとIntent Engineeringという二つの視点の話。"
-published: false
+series: "Life as Code"
+series_order: 3
 image:
   path: /assets/img/headers/2026-07-18-dont-over-instruct-smart-models.png
   alt: "賢いモデルには、細かく指示しないほうがいい"
 ---
+
+> **シリーズ:** Life as Code [3/連載中] — 前: [人生をOSにする、という問いへ——Life as Code 実験ログvol.2](https://tomo-yamada-doublemoon.github.io/til/posts/life-as-code-vol2/)
 
 ## この記事でわかること
 
