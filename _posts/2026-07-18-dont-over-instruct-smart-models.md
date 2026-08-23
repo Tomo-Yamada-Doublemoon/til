@@ -69,6 +69,16 @@ LifeOS全体の負荷は60〜90%削減できました。ざっくり2/3程度、
 
 ここで気になるのは、「指示を減らして、質は落ちなかったのか」という点だと思います。落ちていません。理由は、Pulse側に新しいローカルコンテキスト収集の仕組みを追加したことです。注入するコンテキストを減らしても、必要な情報はPulse側から補えるようにしておくことで、指示の量と情報の質を切り離しました。
 
+ここまでの転換を1枚の図解にまとめました。
+
+<a href="https://diagram-dont-over-instruct-smart-models.surge.sh" class="card-wrapper card p-3 text-decoration-none" target="_blank" rel="noopener">
+  <div class="card-body p-0">
+    <div class="text-muted small mb-1">図解で見る</div>
+    <h5 class="card-title mb-1">賢いモデルには、細かく指示しないほうがいい</h5>
+    <p class="card-text mb-0 small text-muted">LifeOSをv6からv7.xに作り直し、指示を減らすことで負荷を60〜90%削減した転換を図解しました。</p>
+  </div>
+</a>
+
 ## 再現手順(3ステップ)
 
 1. 自分のプロンプト・システムプロンプト・スキル定義の中から、「どうやるか」を書いている箇所を洗い出す
