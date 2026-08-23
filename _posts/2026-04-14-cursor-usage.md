@@ -4,6 +4,9 @@ date: 2026-04-14 09:24:00 +0900
 categories: [Cursor]
 tags: [Cursor, 利用料]
 description: "Cursorでクレジット残量が気になったとき、AIチャット画面下部に常時表示する設定手順。所要5分。"
+image:
+  path: /assets/img/headers/2026-04-14-cursor-usage.png
+  alt: "Cursor AIチャット画面に利用量を表示する方法"
 ---
 
 > **シリーズ:** [Cursor実践] 1/3 — 次: [マルチアカウント運用](../cursor-multi-account-guide/)

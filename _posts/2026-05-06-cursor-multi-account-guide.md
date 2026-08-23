@@ -4,6 +4,9 @@ date: 2026-05-06 12:24:00 +0900
 categories: [ADS受講メモ, Cursor]
 tags: [ADS, Cursor, マルチアカウント, Mac, 学習記録, 環境構築]
 description: "ADS用と個人用でCursorを使い分けたい──その悩みをAIに相談したら、想定外の方法で解決できました。おまけにCursor自身が図解まで作ってくれました。"
+image:
+  path: /assets/img/headers/2026-05-06-cursor-multi-account-guide.png
+  alt: "Cursorのマルチアカウント運用、Macで快適に使う方法"
 ---
 
 > **シリーズ:** [Cursor実践] 2/3 — 前: [利用量表示](../cursor-usage/) — 次: [shadcn 3つの学び](../shadcn-cursor-three-learnings/)

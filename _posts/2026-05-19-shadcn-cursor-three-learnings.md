@@ -4,6 +4,9 @@ date: 2026-05-19 21:07:00 +0900
 categories: [ADS受講メモ, Cursor]
 tags: [ADS, Cursor, shadcn/ui, 学習記録, マインドセット]
 description: "AIに任せたら動いてた。でも確認するまでは完了じゃない。shadcn/ui × Cursorを触って気づいた、正直な3つの学び。"
+image:
+  path: /assets/img/headers/2026-05-19-shadcn-cursor-three-learnings.png
+  alt: "shadcn/ui × Cursorで学んだ3つのこと——わからないまま進んだら意外とできた話"
 ---
 
 > **シリーズ:** [Cursor実践] 3/3 — 前: [マルチアカウント運用](../cursor-multi-account-guide/)

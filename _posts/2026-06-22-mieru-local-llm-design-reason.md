@@ -5,6 +5,9 @@ categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, マインドセット, ローカルLLM, MIERU, プライバシー設計]
 description: "MIERUのAI支援部分をクラウドAPIではなくローカルLLMで実装しようと判断した理由と、Cursor×Ollamaでの初期実装までの記録。"
 mermaid: true
+image:
+  path: /assets/img/headers/2026-06-22-mieru-local-llm-design-reason.png
+  alt: "画面とデータが決まった後に来た壁——MIERUのAI支援をローカルLLMにする理由"
 ---
 
 ## この記事でわかること

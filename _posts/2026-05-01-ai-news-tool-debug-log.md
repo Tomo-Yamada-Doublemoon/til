@@ -4,6 +4,9 @@ date: 2026-05-01 10:30:00 +0900
 categories: [ADS受講メモ]
 tags: [ADS, 学習記録, TypeScript, RSS, Slack, Gemini, Cursor, GitHub Actions, 運用記録]
 description: "AIニュースツールのカスタマイズ後編。Cursorでのコーディング、Slack到達までの失敗2連発、GitHub Actionsの「1時間遅れ」まで、テストから運用1日目をそのまま書く。"
+image:
+  path: /assets/img/headers/2026-05-01-ai-news-tool-debug-log.png
+  alt: "失敗ログ付き：AIニュースツールをCursorで動かすまでにやったこと全部"
 ---
 
 > **シリーズ:** [4月課題・自動化ツール] 4/4 — 前: [AIニュース改造・前編](../ai-news-tool-customization/) — まとめ: [4月課題ふりかえり](../ads-april-assignment-recap/)

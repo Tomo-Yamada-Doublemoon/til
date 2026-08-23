@@ -4,6 +4,9 @@ date: 2026-05-18 16:40:00 +0900
 categories: [ADS受講メモ]
 tags: [ADS, 学習記録, 課題分解, マインドセット]
 description: "ADS月次課題を月初に進める自分ルーティン。課題ページのコピペに加え、協働パターン「カレンダー先読み」でスケジュールを先に渡す型。"
+image:
+  path: /assets/img/headers/2026-05-18-ads-task-routine-template.png
+  alt: "受講当初からやってた課題攻略ルーティンを、ようやく言語化した"
 ---
 
 > **シリーズ:** [ADSの型] 1/3 — 次: [課題分解の本質](../essence-of-task-decomposition/)

@@ -4,6 +4,9 @@ date: 2026-05-09 16:09:00 +0900
 categories: [ADS受講メモ]
 tags: [ADS, 学習記録, Vercel, Next.js, GitHub, インフラ]
 description: "ADS第5回講座で登場したVercel。仕組みがピンとこなかったので、DiaブラウザのAIに聞いてまとめてもらった内容を自分なりに整理しました。"
+image:
+  path: /assets/img/headers/2026-05-09-vercel-understood-via-dia.png
+  alt: "仕組みが分からなかったVercelを、Diaに聞いたら5分で整理できた"
 ---
 
 今日（2026/05/09）はADS第5回講座でした。

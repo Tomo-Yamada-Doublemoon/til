@@ -4,6 +4,9 @@ date: 2026-04-29 10:30:00 +0900
 categories: [ADS受講メモ]
 tags: [ADS, 学習記録, 課題分解, TypeScript, RSS, Slack, Gemini]
 description: "AIニュース配信ツールの情報源をXからRSSに変更する改造プロセスを記録。いきなりコードを触らず「構造理解→変更点整理→プラン作成」の順で進めました。"
+image:
+  path: /assets/img/headers/2026-04-29-ai-news-tool-customization.png
+  alt: "AIニュース配信ツールを「自分仕様」に改造した設計プロセス"
 ---
 
 > **シリーズ:** [4月課題・自動化ツール] 3/4 — 前: [2トラック並行作戦](../two-track-ads-april-review/) — 次: [失敗ログ・後編](../ai-news-tool-debug-log/) — まとめ: [4月課題ふりかえり](../ads-april-assignment-recap/)

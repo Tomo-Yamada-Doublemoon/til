@@ -4,6 +4,9 @@ date: 2026-05-24 08:24:00 +0900
 categories: [番外編, AI活用]
 tags: [GenSpark, 図解, AI活用, 個人利用, 協働パターン]
 description: "docomo光からNuro光に切り替えたクライアントへ、GenSparkで図解を作成し30分でLINE送信できた実例ログ。プロンプト6本の流れとファクトチェックの挟み方を記録します。"
+image:
+  path: /assets/img/headers/2026-05-24-ai-wifi-setup-guide-line-delivery.png
+  alt: "AIは「伝書鳩」になれる——回線切り替え後の設定図解をGenSparkで作ってLINEした"
 ---
 
 ## この記事でわかること

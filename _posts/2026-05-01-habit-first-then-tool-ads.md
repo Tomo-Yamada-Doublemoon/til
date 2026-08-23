@@ -4,6 +4,9 @@ date: 2026-05-01 14:23:00 +0900
 categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, 学習記録, 課題分解, 自動化, アイデア, Morning Dashboard]
 description: "ADS課題「面倒な報告を自動化するツール」。最初のプロトタイプを作り、使い、習慣を育てて──ようやく「本当に欲しいもの」が見えてきた再設計の記録。"
+image:
+  path: /assets/img/headers/2026-05-01-habit-first-then-tool-ads.png
+  alt: "習慣が先、ツールは後──ADS課題を「使いながら設計」した話"
 ---
 
 > **シリーズ:** [4月課題・自動化ツール] 1/4 — 次: [2トラック並行作戦](../two-track-ads-april-review/) — まとめ: [4月課題ふりかえり](../ads-april-assignment-recap/)

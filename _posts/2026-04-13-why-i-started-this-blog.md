@@ -6,6 +6,9 @@ tags: [ADS, アイデア, マインドセット, 学習記録]
 pin: true
 toc: false
 description: "やまちゃんのADS雑記を始めたきっかけと、このブログに何を書いていくかについて。"
+image:
+  path: /assets/img/headers/2026-04-13-why-i-started-this-blog.png
+  alt: "このブログを始めた理由と、私がAIに向き合うわけ"
 ---
 
 ## Slackに流れていくアイデアに、もどかしさを感じていました

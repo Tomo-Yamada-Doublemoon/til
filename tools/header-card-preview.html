@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヘッダーカード テンプレ確認 — やまちゃんのADS雑記</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* HERO: 左レールに縦書きタイプ名。色はバッジとレールだけ変える */
+    :root {
+      --paper: #e6ddd0;
+      --ink: #2a241c;
+      --ink-soft: #5c5348;
+      --rule: #c9bba8;
+      --card-bg: #161410;
+      --card-fg: #f3ebe0;
+      --card-muted: #b8aea0;
+      --howto: #3d8fcc;
+      --think: #9a72c9;
+      --fail: #e08a3c;
+      --recap: #5fa86a;
+      --extra: #e06a5a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(255, 255, 255, 0.28), transparent 55%),
+        var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans JP", sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(1280px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 48px 0 96px;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    }
+
+    header.masthead {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 72ch;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 28px;
+    }
+
+    .kicker {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    h1 {
+      font-family: "Shippori Mincho", serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+
+    .lede {
+      font-size: 16px;
+      color: var(--ink-soft);
+    }
+
+    .spec {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 28px;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    .spec strong { color: var(--ink); font-weight: 600; }
+
+    section.variant {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .variant-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .variant-head h2 {
+      font-family: "Shippori Mincho", serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 1px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    .stage {
+      width: 1200px;
+      max-width: 100%;
+      overflow: auto;
+    }
+
+    .card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      overflow: hidden;
+      background: var(--card-bg);
+      color: var(--card-fg);
+      flex-shrink: 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.09;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .rail {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rail span {
+      writing-mode: vertical-rl;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      color: #fff8ee;
+    }
+
+    .inner {
+      height: 100%;
+      padding: 56px 72px 52px 104px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .site {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: var(--card-muted);
+    }
+
+    .badge {
+      align-self: flex-start;
+      margin-top: 28px;
+      padding: 4px 12px 5px;
+      border: 1px solid currentColor;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      line-height: 1.4;
+    }
+
+    .title {
+      margin-top: 28px;
+      font-family: "Shippori Mincho", serif;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 1.38;
+      letter-spacing: 0.01em;
+      max-width: 18em;
+    }
+
+    .card.is-long .title { font-size: 40px; }
+
+    .desc {
+      margin-top: auto;
+      padding-top: 28px;
+      border-top: 1px solid rgba(243, 235, 224, 0.18);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--card-muted);
+      max-width: 36em;
+    }
+
+    .card[data-type="howto"] { --accent: var(--howto); }
+    .card[data-type="think"] { --accent: var(--think); }
+    .card[data-type="fail"] { --accent: var(--fail); }
+    .card[data-type="recap"] { --accent: var(--recap); }
+    .card[data-type="extra"] { --accent: var(--extra); }
+
+    .card .rail { background: var(--accent); }
+    .card .badge { color: var(--accent); }
+
+    .shrink-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .shrink {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .shrink figcaption {
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+
+    .scale {
+      width: 400px;
+      height: 210px;
+      overflow: hidden;
+    }
+
+    .scale .card {
+      transform: scale(0.333333);
+      transform-origin: top left;
+    }
+
+    body.solo {
+      background: #000;
+    }
+
+    body.solo .page {
+      width: 1200px;
+      margin: 0;
+      padding: 0;
+      gap: 0;
+    }
+
+    body.solo .masthead,
+    body.solo .variant-head,
+    body.solo .shrink-row,
+    body.solo section.variant:has(.shrink-row) {
+      display: none;
+    }
+
+    body.solo section.variant[hidden] { display: none; }
+
+    body.solo .stage { overflow: visible; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <p class="kicker">Preview · 1200 × 630</p>
+      <h1>ヘッダーカード テンプレ</h1>
+      <p class="lede">レイアウトは共通。タイプ色は左レールとバッジだけ変えます。下の5枚は実記事のタイトルと description です。</p>
+      <p class="spec">
+        <span><strong>サイズ</strong> 1200×630</span>
+        <span><strong>背景</strong> ダーク固定</span>
+        <span><strong>明朝</strong> Shippori Mincho</span>
+        <span><strong>ゴシック</strong> IBM Plex Sans JP</span>
+      </p>
+    </header>
+
+    <section class="variant" id="howto">
+      <div class="variant-head">
+        <span class="swatch" style="background: var(--howto)"></span>
+        <h2>手順</h2>
+        <p class="meta">How-to · #3D8FCC</p>
+      </div>
+      <div class="stage">
+        <article class="card" data-type="howto">
+          <div class="rail"><span>手順</span></div>
+          <div class="inner">
+            <p class="site">やまちゃんのADS雑記</p>
+            <span class="badge">手順</span>
+            <h3 class="title">Cursor AIチャット画面に利用量を表示する方法</h3>
+            <p class="desc">Cursorでクレジット残量が気になったとき、AIチャット画面下部に常時表示する設定手順。所要5分。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant" id="think">
+      <div class="variant-head">
+        <span class="swatch" style="background: var(--think)"></span>
+        <h2>思考</h2>
+        <p class="meta">マインドセット / アイデア · #9A72C9</p>
+      </div>
+      <div class="stage">
+        <article class="card" data-type="think">
+          <div class="rail"><span>思考</span></div>
+          <div class="inner">
+            <p class="site">やまちゃんのADS雑記</p>
+            <span class="badge">思考</span>
+            <h3 class="title">課題を分解したら、問題はツールじゃなかった</h3>
+            <p class="desc">「面倒くさい報告を自動化するツール」を作ろうとしたら、3日かけて全然違う問題にたどり着いた話。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant" id="fail">
+      <div class="variant-head">
+        <span class="swatch" style="background: var(--fail)"></span>
+        <h2>失敗ログ</h2>
+        <p class="meta">つまずきの記録 · #E08A3C</p>
+      </div>
+      <div class="stage">
+        <article class="card is-long" data-type="fail">
+          <div class="rail"><span>失敗ログ</span></div>
+          <div class="inner">
+            <p class="site">やまちゃんのADS雑記</p>
+            <span class="badge">失敗ログ</span>
+            <h3 class="title">失敗ログ付き：AIニュースツールをCursorで動かすまでにやったこと全部</h3>
+            <p class="desc">Cursorでのコーディング、Slack到達までの失敗2連発、GitHub Actionsの「1時間遅れ」まで、テストから運用1日目をそのまま書く。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant" id="recap">
+      <div class="variant-head">
+        <span class="swatch" style="background: var(--recap)"></span>
+        <h2>ふりかえり</h2>
+        <p class="meta">月次まとめ · #5FA86A</p>
+      </div>
+      <div class="stage">
+        <article class="card is-long" data-type="recap">
+          <div class="rail"><span>ふりかえり</span></div>
+          <div class="inner">
+            <p class="site">やまちゃんのADS雑記</p>
+            <span class="badge">ふりかえり</span>
+            <h3 class="title">4月課題ふりかえり——自動化ツールを「習慣→計画→実装」で進めた1ヶ月</h3>
+            <p class="desc">ADS 4月課題を振り返り、設計・2トラック・AIニュース改造までの流れと協働パターンを1本にまとめた記録。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant" id="extra">
+      <div class="variant-head">
+        <span class="swatch" style="background: var(--extra)"></span>
+        <h2>番外編</h2>
+        <p class="meta">本線の外 · #E06A5A</p>
+      </div>
+      <div class="stage">
+        <article class="card is-long" data-type="extra">
+          <div class="rail"><span>番外編</span></div>
+          <div class="inner">
+            <p class="site">やまちゃんのADS雑記</p>
+            <span class="badge">番外編</span>
+            <h3 class="title">AIエージェントとガンプラを作る——GenSparkでLED電飾の組み立て作業書を生成してみた</h3>
+            <p class="desc">GenSparkのスーパーエージェントにガンダムエアリアル＋Kosmos LEDキットの組み立て作業書を生成させたら、実務で使えるレベルが出てきた話。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant">
+      <div class="variant-head">
+        <h2>SNS縮小（幅400）</h2>
+        <p class="meta">タイムラインで潰れたときの可読チェック</p>
+      </div>
+      <div class="shrink-row">
+        <figure class="shrink">
+          <div class="scale">
+            <article class="card" data-type="howto">
+              <div class="rail"><span>手順</span></div>
+              <div class="inner">
+                <p class="site">やまちゃんのADS雑記</p>
+                <span class="badge">手順</span>
+                <h3 class="title">Cursor AIチャット画面に利用量を表示する方法</h3>
+                <p class="desc">Cursorでクレジット残量が気になったとき、AIチャット画面下部に常時表示する設定手順。所要5分。</p>
+              </div>
+            </article>
+          </div>
+          <figcaption>手順</figcaption>
+        </figure>
+        <figure class="shrink">
+          <div class="scale">
+            <article class="card" data-type="think">
+              <div class="rail"><span>思考</span></div>
+              <div class="inner">
+                <p class="site">やまちゃんのADS雑記</p>
+                <span class="badge">思考</span>
+                <h3 class="title">課題を分解したら、問題はツールじゃなかった</h3>
+                <p class="desc">「面倒くさい報告を自動化するツール」を作ろうとしたら、3日かけて全然違う問題にたどり着いた話。</p>
+              </div>
+            </article>
+          </div>
+          <figcaption>思考</figcaption>
+        </figure>
+        <figure class="shrink">
+          <div class="scale">
+            <article class="card is-long" data-type="fail">
+              <div class="rail"><span>失敗ログ</span></div>
+              <div class="inner">
+                <p class="site">やまちゃんのADS雑記</p>
+                <span class="badge">失敗ログ</span>
+                <h3 class="title">失敗ログ付き：AIニュースツールをCursorで動かすまでにやったこと全部</h3>
+                <p class="desc">Cursorでのコーディング、Slack到達までの失敗2連発まで、テストから運用1日目をそのまま書く。</p>
+              </div>
+            </article>
+          </div>
+          <figcaption>失敗ログ</figcaption>
+        </figure>
+        <figure class="shrink">
+          <div class="scale">
+            <article class="card is-long" data-type="recap">
+              <div class="rail"><span>ふりかえり</span></div>
+              <div class="inner">
+                <p class="site">やまちゃんのADS雑記</p>
+                <span class="badge">ふりかえり</span>
+                <h3 class="title">4月課題ふりかえり——自動化ツールを「習慣→計画→実装」で進めた1ヶ月</h3>
+                <p class="desc">ADS 4月課題を振り返り、設計・2トラック・AIニュース改造までの流れを1本にまとめた記録。</p>
+              </div>
+            </article>
+          </div>
+          <figcaption>ふりかえり</figcaption>
+        </figure>
+        <figure class="shrink">
+          <div class="scale">
+            <article class="card is-long" data-type="extra">
+              <div class="rail"><span>番外編</span></div>
+              <div class="inner">
+                <p class="site">やまちゃんのADS雑記</p>
+                <span class="badge">番外編</span>
+                <h3 class="title">AIエージェントとガンプラを作る——GenSparkでLED電飾の組み立て作業書を生成してみた</h3>
+                <p class="desc">GenSparkに組み立て作業書を生成させたら、実務で使えるレベルが出てきた話。</p>
+              </div>
+            </article>
+          </div>
+          <figcaption>番外編</figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const only = params.get("card");
+    const title = params.get("title");
+    const desc = params.get("desc");
+    const long = params.get("long");
+    if (only) {
+      document.body.classList.add("solo");
+      document.querySelectorAll("section.variant[id]").forEach((section) => {
+        if (section.id !== only) section.hidden = true;
+      });
+      const card = document.querySelector(`#${only} .stage > .card`);
+      if (card) {
+        if (title) card.querySelector(".title").textContent = title;
+        if (desc) card.querySelector(".desc").textContent = desc;
+        if (long === "1") card.classList.add("is-long");
+      }
+    }
+    document.fonts.ready.then(() => {
+      document.body.dataset.fonts = "ready";
+    });
+  </script>
+</body>
+</html>

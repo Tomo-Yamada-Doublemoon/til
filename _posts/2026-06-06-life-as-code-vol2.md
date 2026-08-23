@@ -6,6 +6,9 @@ tags: [GitHub, ライフハック, マインドセット, 課題分解, アイ�
 description: "PKMツールを転々とした末に気づきました。自分がやりたいのはPKMではなく、人生をOS化することだと。思想を固め、壁打ちを重ね、ようやく最初の一歩を踏み出すまでの記録です。"
 series: "Life as Code"
 mermaid: true
+image:
+  path: /assets/img/headers/2026-06-06-life-as-code-vol2.png
+  alt: "人生をOSにする、という問いへ——Life as Code 実験ログvol.2"
 ---
 
 > **シリーズ:** Life as Code [2/連載中] — 前: [人生をGitHubで「デプロイ」する：Life as Codeの実験開始](https://tomo-yamada-doublemoon.github.io/til/posts/life-as-code-experiment/) / 次: 準備中

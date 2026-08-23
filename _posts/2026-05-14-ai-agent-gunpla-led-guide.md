@@ -4,6 +4,9 @@ date: 2026-05-14 20:49:00 +0900
 categories: [その他, アイデア設計]
 tags: [ADS, GenSpark, Gunpla, AI活用, 個人利用, アイデア, 学習記録]
 description: "GenSparkのスーパーエージェントにガンダムエアリアルフルメカニクス＋Kosmos LEDキットの組み立て作業書を生成させたら、実務で使えるレベルのドキュメントが出てきた話。"
+image:
+  path: /assets/img/headers/2026-05-14-ai-agent-gunpla-led-guide.png
+  alt: "AIエージェントとガンプラを作る——GenSparkでLED電飾の組み立て作業書を生成してみた【番外編】"
 ---
 
 ## はじめに——「番外編」です

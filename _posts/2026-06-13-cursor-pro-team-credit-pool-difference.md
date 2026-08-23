@@ -5,6 +5,9 @@ categories: [Cursor]
 tags: [Cursor, 利用料, 個人利用, 学習記録, プラン比較]
 description: "CursorのProとTeamでAutoモード使用時のクレジット消費に体感差がある理由を、AIファクトチェック経由で構造的に解説。「言えること」と「言いすぎNG」の線引きも整理。"
 series: "Cursor実践"
+image:
+  path: /assets/img/headers/2026-06-13-cursor-pro-team-credit-pool-difference.png
+  alt: "CursorのProとTeam、クレジットの減り方が体感違う理由を調べてみた"
 ---
 
 ## この記事でわかること

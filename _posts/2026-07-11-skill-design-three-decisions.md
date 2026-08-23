@@ -7,6 +7,9 @@ description: "活動リニューアルの壁打ちプロンプトをClaudeスキ
 series: "スキルを育てる"
 series_order: 2
 series_total: 2
+image:
+  path: /assets/img/headers/2026-07-11-skill-design-three-decisions.png
+  alt: "壁打ちプロンプトをスキルにする、3つの設計判断"
 ---
 
 > **シリーズ:** スキルを育てる [2/2] — 前: [スキルはそのまま使わない。壁打ちして育てる](https://tomo-yamada-doublemoon.github.io/til/posts/skill-grow-through-dialogue/)

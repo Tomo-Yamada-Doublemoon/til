@@ -5,6 +5,9 @@ categories: [Cursor実践]
 tags: [Cursor, Git, GitHub, 環境整理, マインドセット, ADS, 学習記録]
 description: "第6回講義をきっかけに、ずっと放置していたCursorのプロジェクト環境を整理。AIに聞くことで「ムリ・ムダ・ムラ」が言語化され、手が動き出した記録。"
 series: "Cursor実践"
+image:
+  path: /assets/img/headers/2026-05-25-cursor-ask-first-git-setup.png
+  alt: "手をつける前に聞いてみた——CursorのAIチャットでGit整理プランを作った話"
 ---
 
 > **シリーズ:** Cursor実践 — 前: [shadcn/ui × Cursorで得た3つの学び](/til/posts/shadcn-cursor-three-learnings/) / 次: （執筆予定）

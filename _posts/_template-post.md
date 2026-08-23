@@ -7,6 +7,8 @@ date: 2026-01-01 09:00:00 +0900
 categories: [ADS受講メモ]
 tags: [ADS, 学習記録]
 description: "検索・一覧用の1文サマリー（必須）"
+# header_type: howto  # howto | think | fail | recap | extra
+# image は tools/render-header-cards.py で生成
 # 任意:
 # series: "4月課題-自動化ツール"  # 4月課題-自動化ツール | Cursor実践 | ADSの型
 # series_order: 1

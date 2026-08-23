@@ -4,6 +4,9 @@ date: 2026-05-30 16:54:00 +0900
 categories: [Cursor, 失敗ログ]
 tags: [ADS, Cursor, 失敗ログ, スマホ活用, 図解, Surge, GitHub]
 description: "ADS仲間の投稿に触発され、スマホ＋Cursor WebとSurgeで図解HTMLを公開するまでの試行錯誤。iPhone・iPad・PCリレー作戦で完走した記録。"
+image:
+  path: /assets/img/headers/2026-05-30-smartphone-cursor-diagram-faillog.png
+  alt: "ADS仲間の投稿に触発されて：スマホ＋Cursor Webで図解生成、3つの壁を越えた記録"
 ---
 
 ## この記事でわかること

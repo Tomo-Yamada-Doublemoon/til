@@ -3,6 +3,10 @@ title: "Drafts × Gemini × Linear 連携プロジェクト 開発レポート"
 date: 2026-04-17
 categories: [タスク管理]
 tags: [Drafts, Gemini, Linear]
+description: "DraftsとGeminiとLinearを繋いだ開発の備忘録。大変だった過程と、そのとき何をやったかを残す。"
+image:
+  path: /assets/img/headers/2026-04-17-drafts-gemini-linear.png
+  alt: "Drafts × Gemini × Linear 連携プロジェクト 開発レポート"
 ---
 
 # Drafts × Gemini × Linear 連携プロジェクト 開発レポート

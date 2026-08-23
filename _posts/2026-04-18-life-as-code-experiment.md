@@ -5,8 +5,11 @@ categories: [アイデア設計, その他]
 tags: [GitHub, ライフハック, マインドセット, 課題分解, アイデア, 個人利用]  
 description: "「人生をGitHubで管理する」という構想を本気で実装し始めます。タスク管理を超えた、Life as Codeの可能性について。"  
 mermaid: true  
-pin: true  
----  
+pin: true
+image:
+  path: /assets/img/headers/2026-04-18-life-as-code-experiment.png
+  alt: "人生をGitHubで「デプロイ」する：Life as Codeの実験開始"
+---
 
 「人生をGitHubで管理する」というアイデア、冗談ではなく本気で実装しようと考えています。
 

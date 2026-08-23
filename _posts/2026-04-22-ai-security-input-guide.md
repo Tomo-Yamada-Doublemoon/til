@@ -5,6 +5,9 @@ categories: [その他, セキュリティ]
 tags: [AI, セキュリティ, DLP, 個人情報, リテラシー, 学習記録, フリーランス, APIキー]
 description: "AIツールを安全に使うために、入力してはいけない情報のカテゴリと自動バリデーションの方法をまとめた実践ガイド。フリーランスのセキュリティポリシー整備のきっかけにも。"
 pin: true
+image:
+  path: /assets/img/headers/2026-04-22-ai-security-input-guide.png
+  alt: "AIリテラシーの第一歩：機密情報をAIに渡さないための実践ガイド"
 ---
 
 > **シリーズ:** [ADSの型] 3/3 — 前: [課題分解の本質](../essence-of-task-decomposition/)

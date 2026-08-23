@@ -3,6 +3,10 @@ title: Google Workspace を個人利用する方法：Geminiを安く使うた�
 date: 2026-04-15
 categories: [Google Workspace]
 tags: [Google Workspace, 個人利用]
+description: "ムームードメイン経由でGoogle Workspaceを契約し、Geminiを個人で安く使うまでの選択肢を整理した記録。"
+image:
+  path: /assets/img/headers/2026-04-15-google-workspace-usage.png
+  alt: "Google Workspace を個人利用する方法：Geminiを安く使うための選択肢"
 ---
 
 ## 背景

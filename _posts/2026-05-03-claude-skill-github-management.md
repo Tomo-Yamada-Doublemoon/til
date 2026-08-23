@@ -3,6 +3,10 @@ title: "スキルを「育てる」仕組みをGitHubで作った"
 date: 2026-05-03 11:15:00 +0900
 categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, Cursor, GitHub, Claude, 学習記録, 個人利用]
+description: "スキルを更新するたびに戻せなくなる問題を、GitHubでバージョン管理する仕組みにして解決した記録。"
+image:
+  path: /assets/img/headers/2026-05-03-claude-skill-github-management.png
+  alt: "スキルを「育てる」仕組みをGitHubで作った"
 ---
 
 Claudeには「スキル」と呼ばれる、自分専用の動作指示ファイル（SKILL.md）を登録できる仕組みがあります。

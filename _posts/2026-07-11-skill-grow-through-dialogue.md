@@ -7,6 +7,9 @@ description: "提供されたスキルをそのまま使わず、合わないと
 series: "スキルを育てる"
 series_order: 1
 series_total: 2
+image:
+  path: /assets/img/headers/2026-07-11-skill-grow-through-dialogue.png
+  alt: "スキルはそのまま使わない。壁打ちして育てる"
 ---
 
 > **シリーズ:** スキルを育てる [1/2] — 次: [壁打ちプロンプトをスキルにする、3つの設計判断](https://tomo-yamada-doublemoon.github.io/til/posts/skill-design-three-decisions/)

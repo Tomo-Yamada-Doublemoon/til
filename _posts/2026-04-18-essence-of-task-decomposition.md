@@ -5,6 +5,9 @@ categories: [ADS受講メモ, アイデア設計]
 tags: [ADS, 企画術, 課題分解, マインドセット, 学習記録]
 description: "ADS第4回講義で学んだ「アイデアを企画に変える4ステップ」。STEP1の課題分解が浅いと納得感が欠ける、という気づきの記録。"
 mermaid: true
+image:
+  path: /assets/img/headers/2026-04-18-essence-of-task-decomposition.png
+  alt: "納得感の正体は「課題の分解」にあり：ADS講義で気づいた設計の本質"
 ---
 
 > **シリーズ:** [ADSの型] 2/3 — 前: [課題攻略ルーティン](../ads-task-routine-template/) — 次: [AIセキュリティ入力ガイド](../ai-security-input-guide/)

@@ -5,8 +5,8 @@ categories: [ADS受講メモ]
 tags: [ADS, 学習記録, 課題分解, アイデア, マインドセット]
 description: "月次課題の進め方を自分一人で整理せず、AI搭載ブラウザDiaに叩き台を作らせた。そのプランをベースに4月後半を動いた記録。"
 image:
-  path: /assets/img/2026-05-11-ads-monthly-plan-with-dia.jpg
-  alt: DiaがまとめてくれたADS月次課題の進め方プラン
+  path: /assets/img/headers/2026-05-11-two-track-ads-april-review.png
+  alt: "2トラック並行作戦——4月後半の課題攻略ログ"
 ---
 
 > **シリーズ:** [4月課題・自動化ツール] 2/4 — 前: [習慣が先、ツールは後](../habit-first-then-tool-ads/) — 次: [AIニュース改造・前編](../ai-news-tool-customization/) — まとめ: [4月課題ふりかえり](../ads-april-assignment-recap/)
