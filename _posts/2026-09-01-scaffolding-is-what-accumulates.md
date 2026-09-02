@@ -9,6 +9,10 @@ image:
   alt: "積み上がるのはモデルではなく、足場だった"
 ---
 
+{::nomarkdown}
+<iframe src="https://diagram-scaffolding-is-what-accumulates.surge.sh" style="width:100%;height:900px;border:1px solid var(--border-color, #e2e8f0);border-radius:8px;" loading="lazy" title="積み上がるのはモデルではなく、足場だった"></iframe>
+{:/nomarkdown}
+
 ## この記事でわかること
 
 - ourlifeos.aiの原則1「Clear Thinking + Prompting is King」の核心

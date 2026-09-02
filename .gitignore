@@ -27,3 +27,7 @@ _sass/vendors
 assets/js/dist
 .DS_Store
 __pycache__
+
+# _DIAGRAM_SIMPLE working files (never publish to the blog repo)
+output/
+deploy-history.log
