@@ -1,0 +1,27 @@
+{
+  "name": "やまちゃんのADS雑記",
+  "short_name": "ADS雑記",
+  "description": "ADS受講メモ × Cursor実践 × Life as Code",
+  "start_url": "/til/",
+  "display": "standalone",
+  "background_color": "#1F8A7A",
+  "theme_color": "#1F8A7A",
+  "icons": [
+    {
+      "src": "/til/assets/img/favicons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/til/assets/img/favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/til/assets/img/favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
