@@ -9,6 +9,10 @@ image:
   alt: "プレイブックをもらったら、まず自分のシステムの穴を探す"
 ---
 
+{::nomarkdown}
+<iframe src="https://diagram-playbook-find-the-gap-first.surge.sh" style="width:100%;height:900px;border:1px solid var(--border-color, #e2e8f0);border-radius:8px;" loading="lazy" title="プレイブックをもらったら、まず自分のシステムの穴を探す"></iframe>
+{:/nomarkdown}
+
 ## この記事でわかること
 
 - 外から持ち込む知識を「入れる」前に、自分のシステムの穴を先に探すという順番
