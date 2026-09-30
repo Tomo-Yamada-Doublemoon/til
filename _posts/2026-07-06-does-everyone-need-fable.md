@@ -9,6 +9,8 @@ image:
   alt: "「全員にFableは必要か」を確かめるために作ったプロンプト"
 ---
 
+> **続き:** [「全員にFableは必要か」のその後：作ったスキルを、自分で採点しない形に作り直した](https://tomo-yamada-doublemoon.github.io/til/posts/fable-skill-rebuilt-no-scores/)
+
 ## この記事でわかること
 
 - 「上位モデルは自分にオーバースペックでは」という違和感を、実験に変える進め方
